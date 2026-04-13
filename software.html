@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Trading Software & Tools 2026 — Trading Mania | EA, Indicators & More</title>
+<meta name="description" content="Free trading software, EAs, indicators and tools for prop firm traders. Download the AI trading journal, prop firm assistant, ORB indicator and more.">
+<link rel="canonical" href="https://tradingmaniaprop.com/software.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#07080f;--bg2:#0d0e1c;--bg3:#13152a;
+  --gold:#f5a623;--gold2:#d48a10;--green:#00d4a0;--blue:#4a9eff;--purple:#a78bfa;
+  --muted:#5a6478;--text:#e8eaf0;
+  --bdr:rgba(255,255,255,0.07);--bdr2:rgba(245,166,35,0.25);
+  --fh:'Bebas Neue',sans-serif;--fm:'DM Sans',sans-serif;--fc:'JetBrains Mono',monospace;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:var(--fm);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.bg-orbs{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:0.07;animation:drift 18s ease-in-out infinite}
+.orb1{width:400px;height:400px;background:var(--purple);top:-100px;left:-100px}
+.orb2{width:300px;height:300px;background:var(--gold);bottom:10%;right:-80px;animation-delay:-7s}
+@keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(20px,-15px)}}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(7,8,15,0.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--bdr);padding:0 24px;height:58px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--fh);font-size:22px;color:var(--gold);letter-spacing:3px;text-decoration:none;display:flex;align-items:center;gap:8px}
+.nav-logo-icon{width:28px;height:28px;background:linear-gradient(135deg,var(--gold),var(--gold2));border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px}
+.nav-links{display:flex;align-items:center;gap:6px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:11px;letter-spacing:1px;font-weight:500;padding:6px 10px;border-radius:6px;transition:all .2s}
+.nav-links a:hover{color:var(--gold);background:rgba(245,166,35,0.07)}
+.nav-links a.active{color:var(--gold)}
+.nav-cta{background:var(--gold)!important;color:#07080f!important;font-weight:700!important;border-radius:20px!important;padding:7px 16px!important;font-size:10px!important;letter-spacing:1.5px!important}
+.hamburger{display:none;flex-direction:column;gap:4px;cursor:pointer;padding:4px}
+.hamburger span{width:22px;height:2px;background:var(--muted);border-radius:2px}
+.mobile-menu{display:none;position:fixed;top:58px;left:0;right:0;background:rgba(13,14,28,0.98);backdrop-filter:blur(20px);border-bottom:1px solid var(--bdr);z-index:99;padding:16px 24px;flex-direction:column;gap:4px}
+.mobile-menu.open{display:flex}
+.mobile-menu a{color:var(--muted);text-decoration:none;font-size:13px;padding:10px 0;border-bottom:1px solid var(--bdr)}
+.mobile-menu a:last-child{border:none;color:var(--gold);font-weight:700}
+
+.page-hero{position:relative;z-index:1;padding:100px 24px 40px;max-width:1100px;margin:0 auto}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(167,139,250,0.08);border:1px solid rgba(167,139,250,0.25);border-radius:100px;padding:5px 14px;font-family:var(--fc);font-size:9px;letter-spacing:2px;color:var(--purple);margin-bottom:20px;width:fit-content}
+
+.wrap{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:0 24px 80px}
+
+/* CATEGORY TABS */
+.cat-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:32px}
+.cat-tab{font-family:var(--fc);font-size:9px;letter-spacing:1px;padding:7px 16px;border-radius:100px;border:1px solid var(--bdr);background:var(--bg2);color:var(--muted);cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:6px}
+.cat-tab:hover,.cat-tab.active{border-color:var(--bdr2);color:var(--gold);background:rgba(245,166,35,.06)}
+
+/* SOFTWARE GRID */
+.software-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px}
+
+/* SOFTWARE CARD */
+.sw-card{background:var(--bg2);border:1px solid var(--bdr);border-radius:14px;overflow:hidden;transition:all .3s;display:flex;flex-direction:column}
+.sw-card:hover{border-color:var(--bdr2);transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.4)}
+.sw-card.featured{border-color:rgba(245,166,35,.3)}
+.sw-header{padding:24px 24px 16px;border-bottom:1px solid var(--bdr)}
+.sw-icon-row{display:flex;align-items:start;justify-content:space-between;margin-bottom:14px}
+.sw-icon{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;border:1px solid var(--bdr)}
+.sw-badges{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}
+.sw-badge{font-family:var(--fc);font-size:7px;letter-spacing:1px;padding:2px 7px;border-radius:4px}
+.badge-free{background:rgba(0,212,160,.1);border:1px solid rgba(0,212,160,.2);color:var(--green)}
+.badge-new{background:rgba(245,166,35,.1);border:1px solid rgba(245,166,35,.2);color:var(--gold)}
+.badge-html{background:rgba(74,158,255,.1);border:1px solid rgba(74,158,255,.2);color:var(--blue)}
+.badge-mq4{background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.2);color:var(--purple)}
+.badge-ea{background:rgba(255,68,68,.1);border:1px solid rgba(255,68,68,.2);color:#ff6b6b}
+.sw-name{font-family:var(--fh);font-size:22px;letter-spacing:2px;color:#fff;margin-bottom:4px}
+.sw-cat{font-family:var(--fc);font-size:8px;letter-spacing:2px;color:var(--muted);margin-bottom:10px}
+.sw-desc{font-size:13px;color:var(--muted);line-height:1.6}
+.sw-body{padding:16px 24px;flex:1}
+.sw-features{list-style:none;margin-bottom:16px}
+.sw-features li{font-size:11px;color:var(--muted);padding:4px 0;display:flex;gap:8px;border-bottom:1px solid var(--bdr)}
+.sw-features li:last-child{border:none}
+.sw-features li::before{content:'✦';color:var(--gold);font-size:9px;flex-shrink:0;margin-top:1px}
+.sw-footer{padding:16px 24px;border-top:1px solid var(--bdr);display:flex;gap:8px}
+.sw-btn{flex:1;text-align:center;font-family:var(--fc);font-size:9px;letter-spacing:1.5px;font-weight:700;padding:10px;border-radius:8px;text-decoration:none;transition:all .2s;cursor:pointer;border:none}
+.btn-download{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#07080f}
+.btn-download:hover{opacity:.9;transform:translateY(-1px)}
+.btn-preview{background:transparent;color:var(--muted);border:1px solid var(--bdr)}
+.btn-preview:hover{border-color:var(--bdr2);color:var(--gold)}
+
+/* COMING SOON CARD */
+.sw-card.coming-soon{opacity:.6}
+.sw-card.coming-soon .sw-footer{pointer-events:none}
+
+/* STATS BAR */
+.stats-strip{background:var(--bg2);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr);padding:20px 24px;position:relative;z-index:1;margin-bottom:40px}
+.stats-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+.stat-item{text-align:center;padding:8px;border-right:1px solid var(--bdr)}
+.stat-item:last-child{border:none}
+.stat-val{font-family:var(--fh);font-size:28px;color:var(--gold)}
+.stat-lbl{font-family:var(--fc);font-size:8px;letter-spacing:2px;color:var(--muted);margin-top:3px}
+
+/* TOAST */
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--bg3);border:1px solid var(--bdr2);border-radius:8px;padding:10px 20px;font-family:var(--fc);font-size:10px;letter-spacing:1px;color:var(--gold);z-index:999;transition:transform .3s ease}
+.toast.show{transform:translateX(-50%) translateY(0)}
+
+footer{position:relative;z-index:1;background:var(--bg2);border-top:1px solid var(--bdr);padding:40px 24px 24px}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-logo{font-family:var(--fh);font-size:20px;color:var(--gold);letter-spacing:3px}
+.footer-logo span{display:block;font-family:var(--fc);font-size:7px;letter-spacing:2px;color:var(--muted)}
+.footer-links{display:flex;gap:16px;flex-wrap:wrap}
+.footer-links a{color:var(--muted);text-decoration:none;font-size:12px;transition:color .2s}
+.footer-links a:hover{color:var(--gold)}
+.footer-copy{font-size:10px;color:var(--muted);max-width:1100px;margin:16px auto 0;padding-top:16px;border-top:1px solid var(--bdr)}
+
+@media(max-width:768px){.nav-links{display:none}.hamburger{display:flex}.software-grid{grid-template-columns:1fr}.stats-inner{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="bg-orbs"><div class="orb orb1"></div><div class="orb orb2"></div></div>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-icon">📈</div>
+    <div>
+      <div>TRADING MANIA</div>
+      <div style="font-family:var(--fm);font-size:7px;letter-spacing:2px;color:var(--muted);font-weight:500;margin-top:1px">BY MK MANAGEMENT SOLUTIONS LLC</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/prop-firm-reviews.html">Reviews</a></li>
+    <li><a href="/news.html">News</a></li>
+    <li><a href="/brokers.html">Brokers</a></li>
+    <li><a href="/hot-deals.html">🔥 Deals</a></li>
+    <li><a href="/software.html" class="active">Software</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/prop-firm-reviews.html" class="nav-cta">VIEW REVIEWS</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/prop-firm-reviews.html">📊 Reviews</a>
+  <a href="/news.html">📰 News</a>
+  <a href="/brokers.html">🏦 Brokers</a>
+  <a href="/hot-deals.html">🔥 Hot Deals</a>
+  <a href="/software.html">💾 Software</a>
+  <a href="/about.html">👤 About</a>
+  <a href="/prop-firm-reviews.html">START HERE →</a>
+</div>
+
+<div class="page-hero">
+  <div class="eyebrow">💾 100% FREE · NO SIGNUP REQUIRED</div>
+  <h1 style="font-family:var(--fh);font-size:clamp(44px,7vw,80px);letter-spacing:2px;color:#fff;line-height:.95">FREE TRADING<br><span style="color:var(--gold)">SOFTWARE</span><br>& TOOLS</h1>
+  <p style="font-size:14px;color:var(--muted);margin-top:16px;max-width:520px;line-height:1.7">EAs, indicators, journals and tools built for prop firm traders. All free — no email required for most downloads.</p>
+</div>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stats-inner">
+    <div class="stat-item"><div class="stat-val">8+</div><div class="stat-lbl">FREE TOOLS</div></div>
+    <div class="stat-item"><div class="stat-val">100%</div><div class="stat-lbl">FREE FOREVER</div></div>
+    <div class="stat-item"><div class="stat-val">MT4/5</div><div class="stat-lbl">COMPATIBLE</div></div>
+    <div class="stat-item"><div class="stat-val">HTML</div><div class="stat-lbl">NO INSTALL</div></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <!-- CATEGORY TABS -->
+  <div class="cat-tabs">
+    <button class="cat-tab active" onclick="filterSW('all',this)">🗂 All Tools</button>
+    <button class="cat-tab" onclick="filterSW('journal',this)">📓 Journals</button>
+    <button class="cat-tab" onclick="filterSW('indicator',this)">📊 Indicators</button>
+    <button class="cat-tab" onclick="filterSW('ea',this)">🤖 Expert Advisors</button>
+    <button class="cat-tab" onclick="filterSW('tool',this)">🔧 Tools</button>
+  </div>
+
+  <div class="software-grid" id="swGrid"></div>
+</div>
+
+<div class="toast" id="toast">✓ Download started!</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">TRADING MANIA<span>BY MK MANAGEMENT SOLUTIONS LLC</span></div>
+    <div class="footer-links">
+      <a href="/">Home</a><a href="/prop-firm-reviews.html">Prop Firms</a>
+      <a href="/brokers.html">Brokers</a><a href="/news.html">News</a>
+      <a href="/about.html">About</a><a href="/contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 MK Management Solution LLC · All tools provided as-is for educational purposes · Not financial advice · Always test on demo first</div>
+</footer>
+
+<script>
+const SOFTWARE = [
+  {
+    id:'journal', cat:'journal', featured:true,
+    icon:'📓', iconBg:'rgba(245,166,35,.1)',
+    name:'AI TRADING JOURNAL', catLabel:'TRADING JOURNAL · HTML',
+    badges:['free','new','html'],
+    desc:'Complete AI-powered trading journal with live NQ/GC charts, P&L dashboard, consistency rule tracker, ORB tools and AI insights. Works offline — single HTML file.',
+    features:['Live NQ, GC, MGC chart tabs','AI trade analysis & insights','Consistency Rule Tracker (15-50%)','Full P&L dashboard & history','ORB Indicator external link','Import/export trade data','Works 100% offline'],
+    downloadUrl:'/trading-journal.html',
+    previewUrl:'/trading-journal.html',
+    downloadLabel:'GET FREE JOURNAL',
+    requiresEmail:true,
+  },
+  {
+    id:'prop-assistant', cat:'tool', featured:true,
+    icon:'🤖', iconBg:'rgba(74,158,255,.1)',
+    name:'PROP FIRM ASSISTANT', catLabel:'AI ADVISOR · HTML',
+    badges:['free','html'],
+    desc:'Ask any question about prop firm rules, drawdown, payouts, consistency — get instant AI-powered answers. Built-in knowledge base for 55+ firms.',
+    features:['55+ firms knowledge base','Payout rules & drawdown info','Consistency rule explanations','Restricted countries checker','Real-time AI responses','No account needed'],
+    downloadUrl:'/prop-firm-assistant.html',
+    previewUrl:'/prop-firm-assistant.html',
+    downloadLabel:'OPEN TOOL',
+    requiresEmail:false,
+  },
+  {
+    id:'orb-indicator', cat:'indicator', featured:false,
+    icon:'📊', iconBg:'rgba(167,139,250,.1)',
+    name:'ORB INDICATOR', catLabel:'INDICATOR · TRADINGVIEW',
+    badges:['free'],
+    desc:'Opening Range Breakout indicator for TradingView. Shows ORB levels, breakout signals and price targets. Used personally for NQ and GC trading.',
+    features:['Opening Range Breakout levels','Visual breakout signals','Price target calculation','Works on NQ, ES, GC, MGC','TradingView Pine Script','Customizable timeframes'],
+    downloadUrl:'https://www.tradingview.com/script/ZpONAzhm/',
+    previewUrl:'https://www.tradingview.com/script/ZpONAzhm/',
+    downloadLabel:'VIEW ON TRADINGVIEW',
+    requiresEmail:false,
+    external:true,
+  },
+  {
+    id:'prop-risk-calc', cat:'tool', featured:false,
+    icon:'🧮', iconBg:'rgba(0,212,160,.1)',
+    name:'PROP FIRM RISK CALC', catLabel:'CALCULATOR · HTML',
+    badges:['free','html','new'],
+    desc:'Calculate your max position size, daily loss limit usage, and drawdown buffer for any prop firm account. Never accidentally blow your account again.',
+    features:['Position size calculator','Daily loss limit tracker','Drawdown buffer calculator','Works for all prop firms','EOD & intraday drawdown modes','Mobile friendly'],
+    downloadUrl:'#coming-soon',
+    previewUrl:'#',
+    downloadLabel:'COMING SOON',
+    requiresEmail:false,
+    comingSoon:true,
+  },
+  {
+    id:'news-dashboard', cat:'tool', featured:false,
+    icon:'📰', iconBg:'rgba(255,68,68,.1)',
+    name:'PROP FIRM NEWS WIDGET', catLabel:'TOOL · HTML',
+    badges:['free','html'],
+    desc:'Embeddable news widget that auto-fetches latest prop firm and forex industry news. Add to any website or use standalone.',
+    features:['Auto-fetches RSS news feeds','Prop firm keyword filtering','Embeddable in any site','Auto-updates every 15 mins','Dark theme built-in','No API key needed'],
+    downloadUrl:'/news.html',
+    previewUrl:'/news.html',
+    downloadLabel:'VIEW NEWS PAGE',
+    requiresEmail:false,
+  },
+  {
+    id:'consistency-tracker', cat:'tool', featured:false,
+    icon:'📈', iconBg:'rgba(245,166,35,.1)',
+    name:'CONSISTENCY TRACKER', catLabel:'TOOL · INCLUDED IN JOURNAL',
+    badges:['free','html'],
+    desc:'Standalone consistency rule tracker for prop firm funded accounts. Track 15%, 30%, 40% and 50% consistency rules with daily P&L input.',
+    features:['15% to 50% rule support','Daily P&L manual entry','Auto-calculation from trade data','Pass/Warning/Fail status','Daily breakdown view','Included in AI Journal'],
+    downloadUrl:'/trading-journal.html',
+    previewUrl:'/trading-journal.html',
+    downloadLabel:'INCLUDED IN JOURNAL',
+    requiresEmail:true,
+  },
+  {
+    id:'ea-news-filter', cat:'ea', featured:false,
+    icon:'🛡️', iconBg:'rgba(167,139,250,.1)',
+    name:'NEWS FILTER EA', catLabel:'EXPERT ADVISOR · MT4/MT5',
+    badges:['free','mq4'],
+    desc:'Automatically pauses trading before and after high-impact news events. Essential for prop firm traders with news restrictions.',
+    features:['Auto-detects high-impact news','Configurable pause window (mins)','Works with any trading EA','MT4 & MT5 compatible','Uses forexfactory calendar','Visual dashboard on chart'],
+    downloadUrl:'#coming-soon',
+    previewUrl:'#',
+    downloadLabel:'COMING SOON',
+    requiresEmail:false,
+    comingSoon:true,
+  },
+  {
+    id:'drawdown-meter', cat:'indicator', featured:false,
+    icon:'⚠️', iconBg:'rgba(255,68,68,.1)',
+    name:'DRAWDOWN METER', catLabel:'INDICATOR · MT4/MT5',
+    badges:['free','mq4'],
+    desc:'Real-time drawdown meter for MT4/MT5. Shows current drawdown vs your prop firm limit with color-coded warnings.',
+    features:['Real-time drawdown display','Color coded — green/yellow/red','Customizable DD limit','EOD & intraday modes','Works with any prop firm','Floating panel on chart'],
+    downloadUrl:'#coming-soon',
+    previewUrl:'#',
+    downloadLabel:'COMING SOON',
+    requiresEmail:false,
+    comingSoon:true,
+  },
+];
+
+const badgeMap = {
+  free:{label:'FREE',cls:'badge-free'},
+  new:{label:'NEW',cls:'badge-new'},
+  html:{label:'HTML',cls:'badge-html'},
+  mq4:{label:'MQ4/5',cls:'badge-mq4'},
+  ea:{label:'EA',cls:'badge-ea'},
+};
+
+function renderSW(list) {
+  document.getElementById('swGrid').innerHTML = list.map(sw => `
+    <div class="sw-card ${sw.featured?'featured':''} ${sw.comingSoon?'coming-soon':''}" data-cat="${sw.cat}">
+      <div class="sw-header">
+        <div class="sw-icon-row">
+          <div class="sw-icon" style="background:${sw.iconBg}">${sw.icon}</div>
+          <div class="sw-badges">${sw.badges.map(b=>`<span class="sw-badge ${badgeMap[b]?.cls||''}">${badgeMap[b]?.label||b.toUpperCase()}</span>`).join('')}${sw.comingSoon?'<span class="sw-badge" style="background:rgba(255,255,255,.05);border:1px solid var(--bdr);color:var(--muted)">SOON</span>':''}</div>
+        </div>
+        <div class="sw-name">${sw.name}</div>
+        <div class="sw-cat">${sw.catLabel}</div>
+        <div class="sw-desc">${sw.desc}</div>
+      </div>
+      <div class="sw-body">
+        <ul class="sw-features">${sw.features.map(f=>`<li>${f}</li>`).join('')}</ul>
+      </div>
+      <div class="sw-footer">
+        ${sw.comingSoon
+          ? `<button class="sw-btn btn-preview" style="flex:1" onclick="notifyMe('${sw.name}')">NOTIFY ME</button>`
+          : `<a href="${sw.requiresEmail?'/trading-journal.html':sw.downloadUrl}" ${sw.external?'target="_blank"':''} class="sw-btn btn-download" onclick="trackDownload('${sw.id}')">${sw.downloadLabel}</a>
+             ${sw.previewUrl && sw.previewUrl !== sw.downloadUrl ? `<a href="${sw.previewUrl}" ${sw.external?'target="_blank"':''} class="sw-btn btn-preview">PREVIEW</a>` : ''}`
+        }
+      </div>
+    </div>`).join('');
+}
+
+function filterSW(cat, btn) {
+  document.querySelectorAll('.cat-tab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const filtered = cat === 'all' ? SOFTWARE : SOFTWARE.filter(s=>s.cat===cat);
+  renderSW(filtered);
+}
+
+function trackDownload(id) {
+  const t = document.getElementById('toast');
+  t.textContent = '✓ Opening tool...';
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'), 2000);
+}
+
+function notifyMe(name) {
+  const t = document.getElementById('toast');
+  t.textContent = '🔔 We\'ll notify you when ' + name + ' is ready!';
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'), 3000);
+}
+
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
+document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open')));
+
+renderSW(SOFTWARE);
+</script>
+</body>
+</html>

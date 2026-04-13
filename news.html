@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prop Firm News 2026 — Trading Mania | Latest Updates</title>
+<meta name="description" content="Latest prop firm news, rule changes, payout updates and industry alerts. Auto-updated from top trading news sources.">
+<link rel="canonical" href="https://tradingmaniaprop.com/news.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#07080f;--bg2:#0d0e1c;--bg3:#13152a;
+  --gold:#f5a623;--gold2:#d48a10;--green:#00d4a0;--blue:#4a9eff;--red:#ff4444;
+  --muted:#5a6478;--text:#e8eaf0;
+  --bdr:rgba(255,255,255,0.07);--bdr2:rgba(245,166,35,0.25);
+  --fh:'Bebas Neue',sans-serif;--fm:'DM Sans',sans-serif;--fc:'JetBrains Mono',monospace;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:var(--fm);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.bg-orbs{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:0.07;animation:drift 18s ease-in-out infinite}
+.orb1{width:400px;height:400px;background:var(--gold);top:-100px;right:-100px}
+.orb2{width:300px;height:300px;background:var(--blue);bottom:10%;left:-80px;animation-delay:-7s}
+@keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(-20px,15px)}}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(7,8,15,0.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--bdr);padding:0 24px;height:58px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--fh);font-size:22px;color:var(--gold);letter-spacing:3px;text-decoration:none;display:flex;align-items:center;gap:8px}
+.nav-logo-icon{width:28px;height:28px;background:linear-gradient(135deg,var(--gold),var(--gold2));border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px}
+.nav-links{display:flex;align-items:center;gap:6px;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:11px;letter-spacing:1px;font-weight:500;padding:6px 10px;border-radius:6px;transition:all .2s}
+.nav-links a:hover{color:var(--gold);background:rgba(245,166,35,0.07)}
+.nav-links a.active{color:var(--gold)}
+.nav-cta{background:var(--gold)!important;color:#07080f!important;font-weight:700!important;border-radius:20px!important;padding:7px 16px!important;font-size:10px!important;letter-spacing:1.5px!important}
+.hamburger{display:none;flex-direction:column;gap:4px;cursor:pointer;padding:4px}
+.hamburger span{width:22px;height:2px;background:var(--muted);border-radius:2px}
+.mobile-menu{display:none;position:fixed;top:58px;left:0;right:0;background:rgba(13,14,28,0.98);backdrop-filter:blur(20px);border-bottom:1px solid var(--bdr);z-index:99;padding:16px 24px;flex-direction:column;gap:4px}
+.mobile-menu.open{display:flex}
+.mobile-menu a{color:var(--muted);text-decoration:none;font-size:13px;padding:10px 0;border-bottom:1px solid var(--bdr)}
+.mobile-menu a:last-child{border:none;color:var(--gold);font-weight:700}
+
+/* PAGE */
+.page-hero{position:relative;z-index:1;padding:100px 24px 40px;max-width:1200px;margin:0 auto}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(245,166,35,0.08);border:1px solid var(--bdr2);border-radius:100px;padding:5px 14px;font-family:var(--fc);font-size:9px;letter-spacing:2px;color:var(--gold);margin-bottom:20px;width:fit-content}
+.live-dot{width:6px;height:6px;background:var(--red);border-radius:50%;animation:pulse 1.5s ease infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.6)}}
+
+.main-wrap{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:0 24px 80px;display:grid;grid-template-columns:1fr 320px;gap:32px;align-items:start}
+
+/* FILTERS */
+.filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.filter-btn{font-family:var(--fc);font-size:9px;letter-spacing:1px;padding:6px 14px;border-radius:100px;border:1px solid var(--bdr);background:var(--bg2);color:var(--muted);cursor:pointer;transition:all .2s}
+.filter-btn:hover,.filter-btn.active{background:rgba(245,166,35,.08);border-color:var(--bdr2);color:var(--gold)}
+
+/* NEWS CARDS */
+.news-grid{display:flex;flex-direction:column;gap:16px}
+.news-card{background:var(--bg2);border:1px solid var(--bdr);border-radius:12px;padding:20px;transition:all .3s;text-decoration:none;color:inherit;display:block;animation:fadeUp .4s ease both}
+.news-card:hover{border-color:var(--bdr2);transform:translateX(4px)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.news-meta{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.news-source{font-family:var(--fc);font-size:8px;letter-spacing:1.5px;padding:2px 8px;border-radius:4px;background:var(--bg3);border:1px solid var(--bdr);color:var(--muted)}
+.news-cat{font-family:var(--fc);font-size:8px;letter-spacing:1px;padding:2px 8px;border-radius:4px}
+.cat-alert{background:rgba(255,68,68,.1);border:1px solid rgba(255,68,68,.2);color:var(--red)}
+.cat-deal{background:rgba(0,212,160,.1);border:1px solid rgba(0,212,160,.2);color:var(--green)}
+.cat-update{background:rgba(74,158,255,.1);border:1px solid rgba(74,158,255,.2);color:var(--blue)}
+.cat-general{background:rgba(245,166,35,.1);border:1px solid rgba(245,166,35,.2);color:var(--gold)}
+.news-date{font-family:var(--fc);font-size:8px;color:var(--muted);margin-left:auto}
+.news-title{font-size:15px;font-weight:600;color:var(--text);margin-bottom:8px;line-height:1.4}
+.news-card:hover .news-title{color:var(--gold)}
+.news-desc{font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:12px}
+.news-link{font-family:var(--fc);font-size:8px;letter-spacing:2px;color:var(--gold)}
+
+/* LOADING */
+.loading-wrap{text-align:center;padding:60px 0}
+.loader{width:32px;height:32px;border:2px solid var(--bdr);border-top-color:var(--gold);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 12px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading-txt{font-family:var(--fc);font-size:9px;letter-spacing:2px;color:var(--muted)}
+
+/* SIDEBAR */
+.sidebar{display:flex;flex-direction:column;gap:16px;position:sticky;top:80px}
+.sidebar-card{background:var(--bg2);border:1px solid var(--bdr);border-radius:12px;padding:20px}
+.sidebar-title{font-family:var(--fc);font-size:9px;letter-spacing:2px;color:var(--muted);margin-bottom:16px;text-transform:uppercase}
+
+/* TRENDING */
+.trend-item{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--bdr);align-items:start}
+.trend-item:last-child{border:none}
+.trend-num{font-family:var(--fh);font-size:20px;color:var(--bg3);line-height:1;min-width:24px}
+.trend-title{font-size:12px;color:var(--text);line-height:1.4;cursor:pointer;transition:color .2s}
+.trend-title:hover{color:var(--gold)}
+.trend-src{font-family:var(--fc);font-size:8px;color:var(--muted);margin-top:2px}
+
+/* SOURCES */
+.source-item{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--bdr)}
+.source-item:last-child{border:none}
+.source-name{font-size:12px;color:var(--text)}
+.source-count{font-family:var(--fc);font-size:8px;color:var(--muted);background:var(--bg3);padding:2px 6px;border-radius:4px}
+
+/* CTA CARD */
+.cta-card{background:linear-gradient(135deg,rgba(245,166,35,.08),rgba(245,166,35,.03));border:1px solid var(--bdr2);border-radius:12px;padding:20px;text-align:center}
+.cta-card h3{font-family:var(--fh);font-size:22px;letter-spacing:2px;color:#fff;margin-bottom:8px}
+.cta-card p{font-size:11px;color:var(--muted);margin-bottom:16px;line-height:1.6}
+.cta-btn{display:block;background:var(--gold);color:#07080f;font-weight:700;font-family:var(--fc);font-size:9px;letter-spacing:2px;padding:10px;border-radius:8px;text-decoration:none;transition:all .2s}
+.cta-btn:hover{background:var(--gold2)}
+
+/* FOOTER */
+footer{position:relative;z-index:1;background:var(--bg2);border-top:1px solid var(--bdr);padding:40px 24px 24px}
+.footer-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-logo{font-family:var(--fh);font-size:20px;color:var(--gold);letter-spacing:3px}
+.footer-logo span{display:block;font-family:var(--fc);font-size:7px;letter-spacing:2px;color:var(--muted)}
+.footer-links{display:flex;gap:16px;flex-wrap:wrap}
+.footer-links a{color:var(--muted);text-decoration:none;font-size:12px;transition:color .2s}
+.footer-links a:hover{color:var(--gold)}
+.footer-copy{font-size:10px;color:var(--muted);max-width:1200px;margin:16px auto 0;padding-top:16px;border-top:1px solid var(--bdr)}
+
+@media(max-width:900px){.main-wrap{grid-template-columns:1fr}.sidebar{position:static}}
+@media(max-width:768px){.nav-links{display:none}.hamburger{display:flex}}
+</style>
+</head>
+<body>
+<div class="bg-orbs"><div class="orb orb1"></div><div class="orb orb2"></div></div>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-icon">📈</div>
+    <div>
+      <div>TRADING MANIA</div>
+      <div style="font-family:var(--fm);font-size:7px;letter-spacing:2px;color:var(--muted);font-weight:500;margin-top:1px">BY MK MANAGEMENT SOLUTIONS LLC</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/prop-firm-reviews.html">Reviews</a></li>
+    <li><a href="/news.html" class="active">News</a></li>
+    <li><a href="/brokers.html">Brokers</a></li>
+    <li><a href="/hot-deals.html">🔥 Deals</a></li>
+    <li><a href="/software.html">Software</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/prop-firm-reviews.html" class="nav-cta">VIEW REVIEWS</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/prop-firm-reviews.html">📊 Reviews</a>
+  <a href="/news.html">📰 News</a>
+  <a href="/brokers.html">🏦 Brokers</a>
+  <a href="/hot-deals.html">🔥 Hot Deals</a>
+  <a href="/software.html">💾 Software</a>
+  <a href="/about.html">👤 About</a>
+  <a href="/prop-firm-reviews.html">START HERE →</a>
+</div>
+
+<div class="page-hero">
+  <div class="eyebrow"><span class="live-dot"></span>LIVE · AUTO-UPDATED</div>
+  <h1 style="font-family:var(--fh);font-size:clamp(44px,7vw,80px);letter-spacing:2px;color:#fff;line-height:.95">PROP FIRM<br><span style="color:var(--gold)">NEWS</span></h1>
+  <p style="font-size:14px;color:var(--muted);margin-top:16px;max-width:500px;line-height:1.7">Latest rule changes, payout updates, firm launches and industry alerts — auto-fetched from top sources.</p>
+</div>
+
+<div class="main-wrap">
+  <!-- LEFT: NEWS -->
+  <div>
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterNews('all',this)">All</button>
+      <button class="filter-btn" onclick="filterNews('alert',this)">🚨 Alerts</button>
+      <button class="filter-btn" onclick="filterNews('deal',this)">💰 Deals</button>
+      <button class="filter-btn" onclick="filterNews('update',this)">🔄 Updates</button>
+      <button class="filter-btn" onclick="filterNews('general',this)">📰 General</button>
+    </div>
+    <div id="newsGrid" class="news-grid">
+      <div class="loading-wrap">
+        <div class="loader"></div>
+        <div class="loading-txt">FETCHING LATEST NEWS...</div>
+      </div>
+    </div>
+    <div id="loadMoreWrap" style="text-align:center;margin-top:24px;display:none">
+      <button onclick="loadMore()" style="font-family:var(--fc);font-size:10px;letter-spacing:2px;color:var(--muted);background:var(--bg2);border:1px solid var(--bdr);padding:12px 28px;border-radius:8px;cursor:pointer;transition:all .2s" onmouseover="this.style.borderColor='rgba(245,166,35,.3)';this.style.color='#f5a623'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.color='#5a6478'">LOAD MORE →</button>
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="sidebar-card">
+      <div class="sidebar-title">📈 Trending Topics</div>
+      <div id="trendingList">
+        <div class="loading-wrap" style="padding:20px 0"><div class="loader"></div></div>
+      </div>
+    </div>
+    <div class="sidebar-card">
+      <div class="sidebar-title">📡 Sources</div>
+      <div id="sourcesList">
+        <div class="source-item"><span class="source-name">Finance Magnates</span><span class="source-count" id="src-fm">--</span></div>
+        <div class="source-item"><span class="source-name">ForexLive</span><span class="source-count" id="src-fxl">--</span></div>
+        <div class="source-item"><span class="source-name">FXStreet</span><span class="source-count" id="src-fxs">--</span></div>
+        <div class="source-item"><span class="source-name">LeapRate</span><span class="source-count" id="src-lpr">--</span></div>
+      </div>
+    </div>
+    <div class="cta-card">
+      <h3>TOP PICKS</h3>
+      <p>Compare 55+ prop firms with real reviews from a funded trader.</p>
+      <a href="/prop-firm-reviews.html" class="cta-btn">VIEW REVIEWS →</a>
+    </div>
+    <div class="sidebar-card">
+      <div class="sidebar-title">🔥 Hot Deals</div>
+      <div id="dealsList" style="display:flex;flex-direction:column;gap:8px">
+        <a href="/hot-deals.html" style="display:flex;justify-content:space-between;align-items:center;padding:8px;background:var(--bg3);border-radius:8px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='rgba(245,166,35,.08)'" onmouseout="this.style.background='var(--bg3)'">
+          <div><div style="font-size:11px;color:var(--text);font-weight:500">Alpha Futures</div><div style="font-family:var(--fc);font-size:8px;color:var(--green)">10% OFF</div></div>
+          <div style="font-family:var(--fc);font-size:8px;color:var(--muted)">→</div>
+        </a>
+        <a href="/hot-deals.html" style="display:flex;justify-content:space-between;align-items:center;padding:8px;background:var(--bg3);border-radius:8px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='rgba(245,166,35,.08)'" onmouseout="this.style.background='var(--bg3)'">
+          <div><div style="font-size:11px;color:var(--text);font-weight:500">Bulenox</div><div style="font-family:var(--fc);font-size:8px;color:var(--green)">89% OFF</div></div>
+          <div style="font-family:var(--fc);font-size:8px;color:var(--muted)">→</div>
+        </a>
+        <a href="/hot-deals.html" style="display:flex;justify-content:space-between;align-items:center;padding:8px;background:var(--bg3);border-radius:8px;text-decoration:none;transition:all .2s" onmouseover="this.style.background='rgba(245,166,35,.08)'" onmouseout="this.style.background='var(--bg3)'">
+          <div><div style="font-size:11px;color:var(--text);font-weight:500">FundedSeat</div><div style="font-family:var(--fc);font-size:8px;color:var(--green)">60% OFF</div></div>
+          <div style="font-family:var(--fc);font-size:8px;color:var(--muted)">→</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">TRADING MANIA<span>BY MK MANAGEMENT SOLUTIONS LLC</span></div>
+    <div class="footer-links">
+      <a href="/">Home</a><a href="/prop-firm-reviews.html">Reviews</a>
+      <a href="/brokers.html">Brokers</a><a href="/software.html">Software</a>
+      <a href="/about.html">About</a><a href="/contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 MK Management Solution LLC · Not financial advice · News sourced from public RSS feeds</div>
+</footer>
+
+<script>
+// ── CONFIG ──
+// RSS feeds proxied through allorigins (free CORS proxy)
+const PROXY = 'https://api.allorigins.win/get?url=';
+const FEEDS = [
+  { name:'Finance Magnates', id:'fm',  url:'https://www.financemagnates.com/feed/', color:'#4a9eff' },
+  { name:'ForexLive',        id:'fxl', url:'https://www.forexlive.com/feed/news',  color:'#00d4a0' },
+  { name:'FXStreet',         id:'fxs', url:'https://www.fxstreet.com/rss/news',    color:'#f5a623' },
+  { name:'LeapRate',         id:'lpr', url:'https://www.leaprate.com/feed/',        color:'#a78bfa' },
+];
+
+// Keywords to auto-categorize
+const CATS = {
+  alert:  ['shut down','shutdown','scam','warning','fraud','investigation','ban','blocked','suspended','collapse'],
+  deal:   ['discount','promo','code','off','sale','coupon','deal','offer','free','launch'],
+  update: ['update','change','rule','policy','payout','new plan','feature','platform','announcement'],
+};
+
+let allNews = [], currentFilter = 'all', shownCount = 0;
+const PAGE_SIZE = 10;
+
+function categorize(title, desc) {
+  const text = (title + ' ' + desc).toLowerCase();
+  for (const [cat, words] of Object.entries(CATS)) {
+    if (words.some(w => text.includes(w))) return cat;
+  }
+  return 'general';
+}
+
+function isPropRelated(title, desc) {
+  const text = (title + ' ' + desc).toLowerCase();
+  const keywords = ['prop','funded','trader','futures','forex','payout','drawdown','challenge','firm','capital','evaluation'];
+  return keywords.some(k => text.includes(k));
+}
+
+function timeAgo(dateStr) {
+  const diff = Date.now() - new Date(dateStr).getTime();
+  const mins = Math.floor(diff / 60000);
+  if (mins < 60) return mins + 'm ago';
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 24) return hrs + 'h ago';
+  return Math.floor(hrs / 24) + 'd ago';
+}
+
+function catClass(cat) {
+  return { alert:'cat-alert', deal:'cat-deal', update:'cat-update', general:'cat-general' }[cat] || 'cat-general';
+}
+function catLabel(cat) {
+  return { alert:'🚨 ALERT', deal:'💰 DEAL', update:'🔄 UPDATE', general:'📰 NEWS' }[cat] || '📰 NEWS';
+}
+
+async function fetchFeed(feed) {
+  try {
+    const res = await fetch(PROXY + encodeURIComponent(feed.url));
+    const data = await res.json();
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(data.contents, 'text/xml');
+    const items = xml.querySelectorAll('item');
+    const results = [];
+    items.forEach(item => {
+      const title = item.querySelector('title')?.textContent || '';
+      const desc  = item.querySelector('description')?.textContent?.replace(/<[^>]*>/g,'').slice(0,180) || '';
+      const link  = item.querySelector('link')?.textContent || '#';
+      const date  = item.querySelector('pubDate')?.textContent || '';
+      if (!title) return;
+      results.push({ title, desc, link, date, source: feed.name, sourceId: feed.id, cat: categorize(title, desc), propRelated: isPropRelated(title, desc) });
+    });
+    return results;
+  } catch(e) {
+    console.warn('Feed failed:', feed.name, e);
+    return [];
+  }
+}
+
+function renderCard(item, idx) {
+  return `<a href="${item.link}" target="_blank" rel="noopener" class="news-card" data-cat="${item.cat}" style="animation-delay:${(idx%PAGE_SIZE)*0.05}s">
+    <div class="news-meta">
+      <span class="news-source">${item.source}</span>
+      <span class="news-cat ${catClass(item.cat)}">${catLabel(item.cat)}</span>
+      ${item.propRelated ? '<span class="news-cat cat-general">PROP FIRM</span>' : ''}
+      <span class="news-date">${item.date ? timeAgo(item.date) : ''}</span>
+    </div>
+    <div class="news-title">${item.title}</div>
+    ${item.desc ? `<div class="news-desc">${item.desc}...</div>` : ''}
+    <div class="news-link">READ FULL ARTICLE →</div>
+  </a>`;
+}
+
+function renderNews() {
+  const filtered = currentFilter === 'all' ? allNews : allNews.filter(n => n.cat === currentFilter);
+  const grid = document.getElementById('newsGrid');
+  if (!filtered.length) {
+    grid.innerHTML = `<div style="text-align:center;padding:60px;color:var(--muted);font-family:var(--fc);font-size:11px;letter-spacing:2px">NO NEWS FOUND</div>`;
+    return;
+  }
+  const slice = filtered.slice(0, shownCount);
+  grid.innerHTML = slice.map(renderCard).join('');
+  const lmw = document.getElementById('loadMoreWrap');
+  lmw.style.display = shownCount < filtered.length ? 'block' : 'none';
+}
+
+function loadMore() {
+  shownCount += PAGE_SIZE;
+  renderNews();
+}
+
+function filterNews(cat, btn) {
+  currentFilter = cat;
+  shownCount = PAGE_SIZE;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderNews();
+}
+
+function renderTrending() {
+  const propNews = allNews.filter(n => n.propRelated).slice(0, 5);
+  const el = document.getElementById('trendingList');
+  if (!propNews.length) { el.innerHTML = '<div style="font-size:12px;color:var(--muted)">Loading...</div>'; return; }
+  el.innerHTML = propNews.map((n, i) => `
+    <div class="trend-item">
+      <div class="trend-num">0${i+1}</div>
+      <div>
+        <div class="trend-title" onclick="window.open('${n.link}','_blank')">${n.title.slice(0,60)}${n.title.length>60?'...':''}</div>
+        <div class="trend-src">${n.source}</div>
+      </div>
+    </div>`).join('');
+}
+
+function updateSourceCounts() {
+  const counts = {};
+  allNews.forEach(n => { counts[n.sourceId] = (counts[n.sourceId]||0)+1; });
+  Object.entries(counts).forEach(([id, cnt]) => {
+    const el = document.getElementById('src-' + id);
+    if (el) el.textContent = cnt + ' articles';
+  });
+}
+
+async function init() {
+  // Fetch all feeds in parallel
+  const results = await Promise.all(FEEDS.map(fetchFeed));
+  allNews = results.flat().sort((a,b) => new Date(b.date) - new Date(a.date));
+
+  // If all feeds fail (CORS etc), show fallback
+  if (!allNews.length) {
+    document.getElementById('newsGrid').innerHTML = `
+      <div style="background:var(--bg2);border:1px solid var(--bdr);border-radius:12px;padding:32px;text-align:center">
+        <div style="font-size:32px;margin-bottom:16px">📡</div>
+        <div style="font-family:var(--fc);font-size:11px;letter-spacing:2px;color:var(--gold);margin-bottom:8px">FETCHING NEWS</div>
+        <p style="font-size:13px;color:var(--muted);line-height:1.7">News feeds are loading. If this persists, check back shortly or visit our sources directly:</p>
+        <div style="display:flex;gap:10px;justify-content:center;margin-top:16px;flex-wrap:wrap">
+          <a href="https://www.financemagnates.com" target="_blank" style="font-family:var(--fc);font-size:9px;color:var(--blue);border:1px solid rgba(74,158,255,.2);padding:6px 12px;border-radius:6px;text-decoration:none">Finance Magnates</a>
+          <a href="https://www.forexlive.com" target="_blank" style="font-family:var(--fc);font-size:9px;color:var(--green);border:1px solid rgba(0,212,160,.2);padding:6px 12px;border-radius:6px;text-decoration:none">ForexLive</a>
+          <a href="https://www.leaprate.com" target="_blank" style="font-family:var(--fc);font-size:9px;color:var(--gold);border:1px solid var(--bdr2);padding:6px 12px;border-radius:6px;text-decoration:none">LeapRate</a>
+        </div>
+      </div>`;
+    return;
+  }
+
+  shownCount = PAGE_SIZE;
+  renderNews();
+  renderTrending();
+  updateSourceCounts();
+}
+
+function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+document.querySelectorAll('.mobile-menu a').forEach(a => a.addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open')));
+
+init();
+
+// Auto-refresh every 15 minutes
+setInterval(init, 15 * 60 * 1000);
+</script>
+</body>
+</html>
